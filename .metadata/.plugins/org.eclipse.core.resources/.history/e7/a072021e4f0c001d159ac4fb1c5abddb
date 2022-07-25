@@ -1,0 +1,44 @@
+package com.bookito.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.bookito.domain.Book;
+import com.bookito.services.BookService;
+
+@RequestMapping("/books")
+public class BookController {
+	
+	@Autowired
+	BookService bookService;
+	
+
+	
+	public Book getBookByName(String name) {
+		return bookService.getBookByName(name);
+	}
+
+	
+	public List<Book> getAllBooks() {
+		return bookService.getAllBooks();
+	}
+
+	
+	public Book getBookById(Long id) {
+		return bookService.getBookById(id);
+	}
+
+	
+	public List<Book> getBookByAuthor(Long id) {
+		return bookService.getBookByAuthor(id);
+	}
+
+	
+	public Book createBook(Book book) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

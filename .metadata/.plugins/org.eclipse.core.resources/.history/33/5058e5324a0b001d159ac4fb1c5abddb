@@ -1,0 +1,19 @@
+package com.bookito.controllers;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bookito.domain.Author;
+
+@RestController
+@RequestMapping("/author")
+public class AuthorController {
+	
+	public List<Author> getAllAuthors() {
+		
+		return  
+	}
+	
+}

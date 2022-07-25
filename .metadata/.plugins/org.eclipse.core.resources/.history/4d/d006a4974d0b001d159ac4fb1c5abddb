@@ -1,0 +1,36 @@
+package com.bookito.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.bookito.domain.Book;
+import com.bookito.services.BookService;
+
+public class BookController implements BookService {
+	
+	@Autowired
+	BookService bookService;
+	
+
+	@Override
+	public Book getBookByName(String name) {
+		return null;
+	}
+
+	@Override
+	public List<Book> getAllBooks() {
+		return null;
+	}
+
+	@Override
+	public Book getBookById(Long id) {
+		return null;
+	}
+
+	@Override
+	public List<Book> getBookByAuthor(Long id) {
+		return null;
+	}
+
+}

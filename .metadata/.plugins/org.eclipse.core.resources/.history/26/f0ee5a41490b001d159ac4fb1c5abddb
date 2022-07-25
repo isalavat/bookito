@@ -1,0 +1,22 @@
+package com.bookito.services.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bookito.domain.Book;
+import com.bookito.repositories.BookRepository;
+import com.bookito.services.BookService;
+
+@Service
+public class BookServiceImpl implements BookService {
+	
+	@Autowired
+	private BookRepository bookRepository;
+	
+	@Override
+	public Book getBookByName(String name) {
+		
+		return bookRepository.findByName(name);
+	}
+
+}

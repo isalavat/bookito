@@ -1,0 +1,5 @@
+package com.bookito.services;
+
+public interface BookService {
+	public Book getBookByName(String name);
+}
