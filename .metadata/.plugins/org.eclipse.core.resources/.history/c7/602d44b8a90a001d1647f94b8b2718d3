@@ -1,8 +1,0 @@
-package com.bookito.repositories;
-
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface AuthorRepository extends Repository {
-	
-}

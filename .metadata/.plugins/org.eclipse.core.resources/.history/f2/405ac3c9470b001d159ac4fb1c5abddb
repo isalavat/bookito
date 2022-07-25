@@ -1,8 +1,0 @@
-package com.bookito.services;
-
-import com.bookito.domain.Book;
-
-public interface BookService {
-	
-	public Book getBookByName(String name);
-}
