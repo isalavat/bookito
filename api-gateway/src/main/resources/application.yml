@@ -2,6 +2,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+  
 server:
   port: 8088
 spring:
@@ -10,7 +11,9 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: customer-service
-          uri: lb://customer-service
+        - id: bookModule
+          uri: lb://BOOKITO-SERVICE
           predicates:
-            - Path=/test/**
+          - Path=/books/**
+          
+    
